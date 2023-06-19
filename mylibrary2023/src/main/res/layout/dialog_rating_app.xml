@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Rate Our App"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            />
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:lineSpacingExtra="2dp"
+            android:gravity="center"
+            android:text="If you are enjoy using our app.Would you mind rating on us the App Store."
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:progressTint="@color/rating"
+            android:secondaryProgressTint="@android:color/transparent"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:weightSum="2"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maybe Be, Later"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate Now"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llNativeLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_second"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <include layout="@layout/ad_view_big" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_launcher_round"
+        />
+</RelativeLayout>
