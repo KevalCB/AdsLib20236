@@ -41,7 +41,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
     implementation 'com.google.android.ads:mediation-test-suite:3.0.0'
     implementation 'com.google.ads.mediation:facebook:6.11.0.0'
-    implementation 'com.facebook.android:audience-network-sdk:6.11.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.14.0'
     implementation 'com.facebook.android:facebook-android-sdk:15.0.2'
     implementation 'com.applovin.mediation:facebook-adapter:6.7.0.0'
     implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
@@ -61,7 +61,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'com.github.KevalCB'
                 artifactId = 'Adslib2023'
-                version = '1.0.7'
+                version = '1.0.8'
                 artifact(bundleReleaseAar)
             }
         }
