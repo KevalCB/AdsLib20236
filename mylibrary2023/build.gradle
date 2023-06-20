@@ -61,7 +61,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'com.github.KevalCB'
                 artifactId = 'Adslib2023'
-                version = '1.0.2'
+                version = '1.0.3'
                 artifact(bundleReleaseAar)
             }
         }
