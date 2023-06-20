@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name="com.ads.mylibrary2023.App_Main"
         android:allowBackup="true"
         tools:replace="android:name"
         android:dataExtractionRules="@xml/data_extraction_rules"
